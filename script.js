@@ -21,6 +21,7 @@ function resize() {
 const colors = ["255,255,255", "245,214,123", "139,164,255"];
 
 function draw(t) {
+  if (!ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (const s of stars) {
     const tw = s.base + Math.sin(t * s.speed * 0.06 + s.phase) * 0.35;
