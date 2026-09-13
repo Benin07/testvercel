@@ -225,6 +225,9 @@ main { position: relative; z-index: 1; }
   gap: 1.5rem;
   justify-items: center;
 }
+
+/* two links side by side in project cards (e.g. Gaganyaan) */
+.p-links { display: flex; gap: 1rem; flex-wrap: wrap; }
 .badge-card {
   text-align: center;
   display: flex;
